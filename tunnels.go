@@ -11,25 +11,25 @@ type Tunnel struct {
 	} `json:"config"`
 	Metrics struct {
 		Conns struct {
-			Count  int `json:"count"`
-			Gauge  int `json:"gauge"`
-			Rate1  int `json:"rate1"`
-			Rate5  int `json:"rate5"`
-			Rate15 int `json:"rate15"`
-			P50    int `json:"p50"`
-			P90    int `json:"p90"`
-			P95    int `json:"p95"`
-			P99    int `json:"p99"`
+			Count  int     `json:"count"`
+			Gauge  int     `json:"gauge"`
+			Rate1  float64 `json:"rate1"`
+			Rate5  float64 `json:"rate5"`
+			Rate15 float64 `json:"rate15"`
+			P50    int     `json:"p50"`
+			P90    int     `json:"p90"`
+			P95    int     `json:"p95"`
+			P99    int     `json:"p99"`
 		} `json:"conns"`
 		HTTP struct {
-			Count  int `json:"count"`
-			Rate1  int `json:"rate1"`
-			Rate5  int `json:"rate5"`
-			Rate15 int `json:"rate15"`
-			P50    int `json:"p50"`
-			P90    int `json:"p90"`
-			P95    int `json:"p95"`
-			P99    int `json:"p99"`
+			Count  int     `json:"count"`
+			Rate1  float64 `json:"rate1"`
+			Rate5  float64 `json:"rate5"`
+			Rate15 float64 `json:"rate15"`
+			P50    int     `json:"p50"`
+			P90    int     `json:"p90"`
+			P95    int     `json:"p95"`
+			P99    int     `json:"p99"`
 		} `json:"http"`
 	} `json:"metrics"`
 }
