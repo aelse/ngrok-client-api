@@ -16,20 +16,20 @@ type Tunnel struct {
 			Rate1  float64 `json:"rate1"`
 			Rate5  float64 `json:"rate5"`
 			Rate15 float64 `json:"rate15"`
-			P50    int     `json:"p50"`
-			P90    int     `json:"p90"`
-			P95    int     `json:"p95"`
-			P99    int     `json:"p99"`
+			P50    float64 `json:"p50"`
+			P90    float64 `json:"p90"`
+			P95    float64 `json:"p95"`
+			P99    float64 `json:"p99"`
 		} `json:"conns"`
 		HTTP struct {
 			Count  int     `json:"count"`
 			Rate1  float64 `json:"rate1"`
 			Rate5  float64 `json:"rate5"`
 			Rate15 float64 `json:"rate15"`
-			P50    int     `json:"p50"`
-			P90    int     `json:"p90"`
-			P95    int     `json:"p95"`
-			P99    int     `json:"p99"`
+			P50    float64 `json:"p50"`
+			P90    float64 `json:"p90"`
+			P95    float64 `json:"p95"`
+			P99    float64 `json:"p99"`
 		} `json:"http"`
 	} `json:"metrics"`
 }
